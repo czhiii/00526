@@ -41,12 +41,9 @@ function draw() {
     // 根據手勢移動圓圈位置
     let x, y;
     if (gesture === "rock") {
-      // 額頭
-      [x, y] = keypoints[10];
-    } else if (gesture === "scissors") {
       // 左右眼睛
       [x, y] = keypoints[159];
-    } else if (gesture === "paper") {
+    } else if (gesture === "scissors" || gesture === "paper") {
       // 左右臉頰
       [x, y] = keypoints[234];
     } else {
