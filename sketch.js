@@ -43,7 +43,10 @@ function draw() {
     if (gesture === "rock") {
       // 左右眼睛
       [x, y] = keypoints[159];
-    } else if (gesture === "scissors" || gesture === "paper") {
+    } else if (gesture === "scissors") {
+      // 額頭
+      [x, y] = keypoints[10];
+    } else if (gesture === "paper") {
       // 左右臉頰
       [x, y] = keypoints[234];
     } else {
